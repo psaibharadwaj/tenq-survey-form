@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>	Tenq Corporation Employee Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="css/survey.css">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>	
+		<!-- User Story #1: I can see a title with id="title" in H1 sized text. -->
+		<h1 id="title">	Tenq Corp Employee Survey Form</h1>
+		<!-- User Story #2: I can see a short explanation with id="description" in P sized text. -->
+		<p id="description">Thank you for taking time to improve our page</p>
+
+	</header>
+
+	<!-- User Story #3: I can see a form with id="survey-form". -->
+	<form id="survey-form" action="" method="post">
+		<!-- User Story #4: Inside the form element, I am required to enter my name in a field with id="name". -->
+		<div class="form-group">
+			<label id="name-label" for="name">Name</label>
+			<input type="text" name="name" id="name" placeholder="Please enter you name" required="" class="form-control">
+		</div>
+
+		<div class="form-group">
+			<!-- User Story #5: Inside the form element, I am required to enter an email in a field with id="email". -->
+
+			<!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+
+			<label id="email-label" for="email">Email</label>
+			<input type="email" name="email" id="email" required="" placeholder="Please enter your email id" class="form-control">
+		</div>
+
+		<div class="form-group">
+			<!-- User Story #7: Inside the form, I can enter a number in a field with id="number". -->
+			<!-- User Story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+			<!-- User Story #9: If I enter numbers outside the range of the number input, which are defined by the min and max attributes, I will see an HTML5 validation error. -->
+
+			<label id="number-label" for="age">Age</label>
+			<input type="number" name="age" min="10" max="70" placeholder="Age" id="number" class="form-control">
+		</div>
+
+		<div class="form-group">
+			<!-- User Story #12: Inside the form element, I can select an option from a dropdown that has a corresponding id="dropdown". -->
+
+			<p>Please select one of the following qualifications</p>
+			<select id="dropdown" name="qulaification" required="" class="form-control">
+				<option disabled="" selected="" value=""> Select your qualification</option>
+				<option value="B.Tech">B.Tech</option>
+				<option value="M.Tech">M.Tech</option>
+				<option value="MSc">MSc</option>
+			</select>
+		</div>
+
+		<div class="form-group">
+			<!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+			<p>Please select your current pay band</p>
+			<label>	<input type="radio" name="payband" value="level7" checked="">Level 7</label>
+			<label> <input type="radio" name="payband" value="level8">Level 8</label>
+			<label> <input type="radio" name="payband" value="level9">Level 9 </label>
+			<label> <input type="radio" name="payband" value="level10">Level 10 </label>
+		</div>
+
+		<div class="form-group">
+			<!-- User Story #15: Inside the form element, I am presented with a textarea at the end for additional comments. -->
+			<p>Please write a description of your current working profile</p>
+			<textarea class="form-control" rows="10" cols="20" name="profile" id="profile"></textarea>			
+		</div>
+
+		<div class="form-group">
+			<p>Please select the courses you would like to learn</p>
+			<label><input type="checkbox" name="course" value="Mechine Learning">Mechine Learning</label>
+			<label><input type="checkbox" name="course" value="C#">C#</label>
+			<label><input type="checkbox" name="course" value="Python">Python</label>
+			<label><input type="checkbox" name="course" value="Javascript">Javascript</label>
+		</div>
+
+		<div class="form-group">
+			<!-- User Story #16: Inside the form element, I am presented with a button with id="submit" to submit all my inputs. -->
+			<button id="submit" name="submit" type="submit">Submit</button>
+		</div>
+	</form>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
